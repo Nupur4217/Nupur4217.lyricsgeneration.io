@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lyrics Generation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						
+						<a href="#abstract" class="icon solid fa-tablet"><span>Abstract</span></a>
+						<a href="#dataset" class="icon solid fa-folder"><span>Dataset</span></a>
+						
+						<a href="#model" class="icon solid fa-envelope"><span>Analysis</span></a>
+						<a href="#results" class="icon solid fa-file"><span>Models</span></a>
+						<a href=" " class="icon brands fa-github"><span>Github</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Machine Learning</h1>
+									<p>Lyrics Generation using GPT-2 Transformers</p>
+								</header>
+								<a href="#home" class="jumplink pic">
+								
+									<img src="C:\Users\knups\Downloads\Sem-2 WPI\ML\Final project website\home screen.jpg" alt="" />
+								</a>
+							</article>
+					
+							
+
+						<!-- abstract -->
+							<article id="abstract" class="panel">
+								<header>
+									<h2>Abstract</h2>
+								</header>
+								<p>
+									Welcome to our lyrics generation project powered by machine learning! Our tool utilizes a pre-trained language model, fine-tuned on a dataset of song lyrics, to automatically generate customized song lyrics based on user input features such as genre, artist, and style
+								</p>
+								<p>The primary function of our tool is to provide a creative and customizable solution for generating song lyrics in a range of styles. Users can specify desired features like genre and artist, and our model will produce coherent and stylistically consistent lyrics tailored to those criteria.
+								</p>
+								<a href="#abstract" class="jumplink pic">
+									<img src="C:\Users\knups\Downloads\Sem-2 WPI\ML\Final project website\abstract.jpg" alt="" style="width: 100%; height: auto;"/>
+								</a>
+							</article>
+
+						<!--dataset-->
+							<article id="dataset" class="panel">
+								<header>
+									<h1>Dataset</h1>
+									<br>
+									<p><h2><b>Lyrics Dataset</b></h2></p>
+									<P><b>Source:</b> Kaggle Dataset - Scrapped Lyrics from 6 Genres
+										<br><b>Description:</b>
+										The lyrics dataset consists of a comprehensive collection of song lyrics spanning six distinct genres, including rock, pop, hip-hop, and more. Each entry in the dataset represents the lyrics of a specific song, providing a rich source of textual data for training our machine learning model.
+										<br><b>Content:</b>
+										The dataset encompasses diverse lyrical content from various artists, offering a broad spectrum of linguistic styles and thematic elements across different music genres.
+										<br><b>Size: </b>
+										The dataset contains thousands of song lyrics entries, enabling robust model training and lyric generation.</P>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<img src="C:\Users\knups\Downloads\Sem-2 WPI\ML\Final project website\dataset lyrics.png" alt="" style="width: 100%; height: auto;"/>
+								</a>
+								<header>
+									<br>
+									<p><h2><b>Artist Dataset</b></h2></p>
+									<p><b>Source:</b> Kaggle Dataset - Scrapped Lyrics from 6 Genres
+										<br><b>Description:</b>
+										The artists dataset complements the lyrics dataset by providing metadata about the artists associated with the songs in our main dataset. It includes information such as artist names, genres, and potentially additional attributes.
+										<br><b>Purpose:</b>
+										This dataset enhances the context and relevance of our lyrics generation model, enabling genre-specific or artist-specific lyric generation based on the associated metadata.
+										</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<img src="C:\Users\knups\Downloads\Sem-2 WPI\ML\Final project website\dataset artists.png" alt="" style="width: 100%; height: auto;"/>
+								</a>
+							</article>
+						
+
+						<!-- Contact -->
+							<article id="model" class="panel">
+								<header>
+									<h2>Exploratory Data Analysis</h2>
+									<p><b>Most common words in lyrics</b></p>
+									<a href="#work" class="jumplink pic">
+										<img src="C:\Users\knups\Downloads\Sem-2 WPI\ML\Final project website\Lyrics EDA.jpg" alt="" style="width: 100%; height: auto;"/>
+									</a>
+									<a href="#work" class="jumplink pic">
+										<img src="C:\Users\knups\Downloads\Sem-2 WPI\ML\Final project website\Lyrics EDA2.jpg" alt="" style="width: 100%; height: auto;"/>
+									</a>
+									<p><b>Sentiment Analysis</b></p>
+									<a href="#work" class="jumplink pic">
+										<img src="C:\Users\knups\Downloads\Sem-2 WPI\ML\Final project website\Sentiment Analysis.jpg" alt="" style="width: 100%; height: auto;"/>
+									</a></header>
+							</article>
+
+
+
+						<!-- results -->
+						<article id="results" class="panel">
+							<header>
+								<h2>Models And Results</h2>
+								<p><b>GPT-2 Transformers</b></p>
+								<p>GPT-2, a powerful pretrained model with 1.5 billion parameters, serves as our foundation. By fine-tuning this model on a dataset of 12,500 popular rock song lyrics, we enable it to generate lyrics that emulate human-like quality and style.
+
+									<br>The process begins with data preparation, where we tokenize and structure the lyrics dataset for optimal model training. Through a training phase using GPU acceleration, we refine GPT-2 to predict coherent verses based on input contexts.
+									
+									<br>Upon training completion, our model seamlessly generates lyrics tailored to specific song styles and lengths. We implement techniques like temperature scaling and top-p filtering to enhance the creativity and relevance of generated text.
+									
+									<br>To evaluate performance, we employ the BLEU metric, achieving a significant improvement over non-fine-tuned GPT-2. Additionally, subjective evaluations through a custom web interface demonstrate the model's ability to produce lyrics that maintain context and rhythm.
+									
+									<br>Our project exemplifies the potential of machine learning in creative endeavors, showcasing how GPT-2 can be harnessed to inspire and assist in songwriting. Join us on this exploration of AI-driven lyrics generation, pushing boundaries and unlocking new possibilities in music composition.</p>
+									<p><b>Results</b></p>
+									<a href="#work" class="jumplink pic">
+										<img src="C:\Users\knups\Downloads\Sem-2 WPI\ML\Final project website\Result GPT.jpg" alt="" style="width: 100%; height: auto;"/>
+									</a>
+									<p><b>Rouge Score</b></p>
+									<a href="#work" class="jumplink pic">
+										<img src="C:\Users\knups\Downloads\Sem-2 WPI\ML\Final project website\Results - 2.jpg" alt="" style="width: 100%; height: 12em;"/>
+									</a>
+									
+							</header>
+							
+							
+						</article>
+
+					</div>
+
+				
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
