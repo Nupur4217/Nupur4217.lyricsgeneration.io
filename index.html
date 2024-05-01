@@ -91,6 +91,19 @@
 								<a href="#work" class="jumplink pic">
 									<img src="dataset artists.png" alt="" style="width: 100%; height: auto;"/>
 								</a>
+								<header>
+									<br>
+									<p><h2><b>HuggingArtist Dataset</b></h2></p>
+									<p><b>Source:</b> HuggingArtist - Scrapped Lyrics from Genius Lyrics - 41 Artists
+										<br><b>Description:</b>
+										<b>This dataset is made of webscraped lyrics of 41 artists that are Spotify's Top 100 artists. The lyrics are all in English. We chose these artists because of their popularity ensures a rich corpus of work. Additionally, we thought these artists would be more engaging and relevant. 
+										<br><b>Purpose:</b>
+										The dataset encompasses diverse lyrical content from various artists, offering a broad spectrum of linguistic styles and thematic elements across different music genres.
+										</b></p>
+										<br><b>Size: </b>
+										The dataset contains 25,000 song lyrics entries, enabling robust model training and lyric generation.</b></P>
+								</header>
+
 							</article>
 						
 
@@ -135,6 +148,20 @@
 									<a href="#work" class="jumplink pic">
 										<img src="Results - 2.jpg" alt="" style="width: 100%; height: 12em;"/>
 									</a>
+								<p><b>Llama 3 8B</b></p>
+								<p><b>Llama 3 is Meta's newest open source LLM. Llama 3 was pretrained on over 15 trillion tokens of data from publicly available sources. The fine-tuning data includes publicly available instruction datasets, as well as over 10M human-annotated examples. The pretraining data was cut off in March 2023, so the data is very fresh.  By fine-tuning this model on a dataset of 25,000 popular song lyrics, we hoped to generate lyrics that were stylistically and topically diverse. <br>
+									<br>We started by loading the pretrained Llama 3 model from huggingface. We then used AutoTokenizer to make a tokenizer from the model. We then set the compute_dtype to float16 to reduce computation resources and set up BitsandBytes configuration to run on one GPU. 
+									<a href="#work" class="jumplink pic">
+										<img src="trainModel1.png" alt="" style="width: 100%; height: auto;"/>
+									</a>
+									<br>
+									<br>For the actual training, we configure LoRA for efficient fine tuning. LoRA ensures that we only fine tune the most important parameters, so we don't have to worry about 8 billion parameters at a time. We had to reduce the number of epochs and batch size due to our computational limitations. Finally, the actual trainer is an SFTTrainer, which implements reiforcement learning.
+									<a href="#work" class="jumplink pic">
+										<img src="trainModel2.png" alt="" style="width: 100%; height: auto;"/>
+									</a>
+									<br>
+									<br>Unfortunately, after we completed training of the model, we were unable to generate lyrical text due to a myriad of errors. We were unable to fix this issue in time. 
+									
 									
 							</header>
 							
